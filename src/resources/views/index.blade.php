@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
-</head>
-    
-<body>
-<div class="contact-form__content">
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/index.css') }}" />
+@endsection
+
+@section('content')
+<div class="todo__message">
+  <p>Todoを作成しました</p>
+</div>
+
+<div class="todo__content">
   <form class="form" action="/contacts/confirm" method="post">
   @csrf
     <div class="form__group">
@@ -32,5 +32,4 @@
     <div>
   </div>
 </div>
-</body>
-</html>
+@endsection

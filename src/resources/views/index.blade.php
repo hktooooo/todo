@@ -41,18 +41,23 @@
     <div class="todo__heading">
       <h2>Todo</h2>
     </div>
-
+    
     <div class="todo__list">
-      @foreach ($todos as $todo)
-      <div class="todo__item">
-        <p class="todo__item__content">{{ $todo['content'] }}</p>
+      <div class="todo__list__row">
+        <div class="update-form">
+          <div class="update__item">
+            <input class="update-form__item-input" type="text" name="content" value="{{ $todos[0]['content'] }}">
+            <input type="hidden" name="id" value="{{ $todos[0]['id'] }}">
+          </div>
+          <div class="todo__item__button">
+            <button class="todo__item__button-submit" type="submit">更新</button>
+          </div>
+        </div>
         <div class="todo__item__button">
-          <button class="todo__item__button-submit" type="submit">更新</button>
           <button class="todo__item__button-submit" type="submit">削除</button>
         </div>
       </div>
-      @endforeach
-    <div>
+    </div>
   </div>
 </div>
 @endsection

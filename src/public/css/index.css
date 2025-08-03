@@ -70,47 +70,27 @@
     border-bottom: 2px solid black;
 }
 
-.todo__item {
+.todo__list__row {
+    background-color: blue;
+    border: red solid 1px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+}
+
+.update-form {
+    display: flex;
     align-items: center;
-    padding-left: 5px;
-    padding-right: 30px;
-    padding-bottom: 5px;
-    height: 40px;
-    border-bottom: 1px solid black;
-}
-
-.todo__item__content {
-    font-size: 14px;
-    height: 40px;
-    line-height: 40px;
-}
-
-.todo__item__button {
-    display: flex;
     justify-content: space-between;
-    width: 130px;
-    height: 35px;
+    width: 600px;
+    border: green solid 1px;
 }
 
 .todo__item__button-submit {
+    background-color: gold;
     display: block;
-    height: 35px;
-    line-height: 35px;
-    width: 60px;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
-.todo__item__button-submit:first-child {
-    background-color: blue;
-}
-
-.todo__item__button-submit:nth-child(2) {
-    background-color: red;
+.todo__item__button__delete {
+    background-color: aqua;
+    boder: black solid 2px;
 }

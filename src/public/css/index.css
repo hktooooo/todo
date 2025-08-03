@@ -4,9 +4,22 @@
     font-size: 20px;
     line-height: 60px;
     height: 60px;
-    background-color: #d0e7de;
-    color: #25664b;
+    background-color: #d1e7dd;
+    color: #0f5132;
     font-weight: bold;
+    border: solid 1px #badbcc;
+}
+
+.todo__error__message {
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 60px;
+    height: 60px;
+    background-color: #f8d7da;
+    color: #842029;
+    font-weight: bold;
+    border: solid 1px #f5c2c7;
 }
 
 .todo__content {

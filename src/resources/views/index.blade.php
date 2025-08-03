@@ -16,7 +16,13 @@
   </div>
 @endif
 
-<!--<p> {{ $todos[0]['content'] }} </p> -->
+@if (count($errors) > 0)
+  <div class="todo__error__message">
+    {{$errors->first('content')}}
+  </div>
+@endif
+
+<!-- <p>{{ $todos[0]['content'] }}</p> -->
 
 <div class="todo__content">
   <form class="create-form" action="/todos" method="post">

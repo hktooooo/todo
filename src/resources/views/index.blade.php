@@ -41,13 +41,15 @@
     <div class="todo__heading">
       <h2>Todo</h2>
     </div>
-    
+
+    <!-- @dump($todos) -->
+
     <div class="todo__list">
       <div class="todo__list__row">
         <div class="update-form">
           <div class="update__item">
             <input class="update-form__item-input" type="text" name="content" value="{{ $todos[0]['content'] }}">
-            <input type="hidden" name="id" value="{{ $todos[0]['id'] }}">
+            <input type="hidden" name="id" value="{{ $todos[0]['id'] }}"> 
           </div>
           <div class="todo__item__button">
             <button class="todo__item__button-submit" type="submit">更新</button>

@@ -44,7 +44,7 @@
 .todo__input input {
     padding: 10px;
     width: 500px;
-    border: 1px solid #000000;
+    border: 1.5px solid #404040;
     border-radius: 3px;
     height: 40px;
     appearance: none;
@@ -55,11 +55,19 @@
     width: 160px;
     height: 40px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     background: #000;
     color: #fff;
     cursor: pointer;
     margin-right: 15px;
+    font-size: 15px;
+}
+
+.todo__list {
+    padding-top: 10px;
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .todo__heading {
@@ -67,30 +75,52 @@
     font-size: 18px;
     line-height: 5px;
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #404040;
+    padding-left: 3px;
 }
 
 .todo__list__row {
-    background-color: blue;
-    border: red solid 1px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1.5px solid #404040;
+    padding-right: 20px;
 }
 
 .update-form {
+    align-items: center;
+    width: 655px;
+    height: 100%;
+    padding-left: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
-    border: green solid 1px;
+}
+
+.update-form__item-input {
+    height: 40px;
+    border: none;
+    width: 500px;
+    font-size: 16px;
 }
 
 .todo__item__button-submit {
-    background-color: gold;
     display: block;
+    width: 60px;
+    height: 35px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
 }
 
-.todo__item__button__delete {
-    background-color: aqua;
-    boder: black solid 2px;
+.todo__item__button-edit {
+    background-color: #0000ff;
+}
+
+.todo__item__button-delete {
+    background-color: #ff0000;
 }
